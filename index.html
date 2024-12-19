@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLICIA CIVIL - INQUERITO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>POLÍCIA CIVIL - JAGUARE</h1>
+            <p>Preencha as informações necessárias para gerar seu relatório.</p>
+        </header>
+        <div class="container">
+            <div class="left-panel">
+                <h2>Informações do Inquérito </h2>
+                <div class="input-group">
+                    <label for="investigados">Investigados:</label>
+                    <input type="text" id="investigados" placeholder="Digite o nome e o RG dos investigados">
+                </div>
+                <div class="input-group">
+                    <label for="crime-em-apuracao">Crime em apuração:</label>
+                    <input type="text" id="crime-em-apuracao" placeholder="Descreva os crimes">
+                </div>
+                <div class="input-group">
+                    <label for="relatorio-dos-fatos">Relatório dos Fatos:</label>
+                    <textarea id="relatorio-dos-fatos" rows="6" placeholder="Descreva o relatório dos fatos"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="justificativa-busca-apreensao">Justificativa para a Busca e Apreensão:</label>
+                    <textarea id="justificativa-busca-apreensao" rows="6" placeholder="Informe a justificativa"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="fundamentacao-legal">Fundamentação Legal:</label>
+                    <textarea id="fundamentacao-legal" rows="6" placeholder="Informe a fundamentação legal"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="provas-complementares">Provas Complementares:</label>
+                    <textarea id="provas-complementares" rows="6" placeholder="Descreva as provas"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="justificativa-mandado-prisao">III. Justificativa para a Solicitação de Mandado de Prisão Preventiva:</label>
+                    <textarea id="justificativa-mandado-prisao" rows="4" cols="50" placeholder="Informe a justificativa para o mandado de prisão preventiva"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="garantia-ordem-publica">2. Garantia da Ordem Pública:</label>
+                    <textarea id="garantia-ordem-publica" rows="4" cols="50" placeholder="Informe a justificativa para a garantia da ordem pública"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="interrupcao-necessaria">3. Necessidade de Interromper a Atividade Investigatória:</label>
+                    <textarea id="interrupcao-necessaria" rows="4" cols="50" placeholder="Informe a justificativa para a interrupção da atividade investigatória, se necessário"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="risco-reiteracao-delitiva">4. Risco de Reiteração Delitiva:</label>
+                    <textarea id="risco-reiteracao-delitiva" rows="4" cols="50" placeholder="Informe o risco de reiteração delitiva, se houver"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="conclusao-requerimentos">5. Conclusão e Requerimentos:</label>
+                    <textarea id="conclusao-requerimentos" rows="6" cols="50" placeholder="Informe a conclusão e os requerimentos"></textarea>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <h2>Imagens (Provas)</h2>
+                <div class="input-group">
+                    <label for="imagens1">Enviar imagem Prova 1</label>
+                    <input type="file" id="imagens1" accept="image/*">
+                </div>
+                <div class="input-group">
+                    <label for="imagens2">Enviar imagem Prova 2</label>
+                    <input type="file" id="imagens2" accept="image/*">
+                </div>
+                <div class="input-group">
+                    <label for="imagens3">Enviar imagem Prova 3</label>
+                    <input type="file" id="imagens3" accept="image/*">
+                </div>
+                <div class="input-group">
+                    <label for="imagens4">Enviar imagem Prova 4</label>
+                    <input type="file" id="imagens4" accept="image/*">
+                </div>
+
+                <h2>Links para Vídeos (Provas)</h2>
+                <div class="input-group">
+                    <label for="video1">Link do Vídeo 1</label>
+                    <input type="url" id="video1" placeholder="Insira o link do vídeo">
+                </div>
+                <div class="input-group">
+                    <label for="video2">Link do Vídeo 2</label>
+                    <input type="url" id="video2" placeholder="Insira o link do vídeo">
+                </div>
+                <div class="input-group">
+                    <label for="video3">Link do Vídeo 3</label>
+                    <input type="url" id="video3" placeholder="Insira o link do vídeo">
+                </div>
+
+                <button id="generate-pdf">Gerar PDF</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="base64.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
